@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "URL Tracker",
+  "version": "1.0",
+  "icons": {
+    "32": "icon32.png"
+  },
+  "action": {
+    "default_popup": "index.html"
+  },
+  "host_permissions": ["http://*/*", "https://*/*"],
+  "permissions": ["storage", "tabs", "downloads", "webNavigation"],
+  "background": {
+    "service_worker": "service-worker.js"
+  }
+}
